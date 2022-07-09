@@ -11,22 +11,20 @@ const app = new App({
   token: process.env.TOKEN,
 });
 
-// Function imports
+// import Home Page
 const homePage = require('./src/homePage');
+
+// import slash commands
+const pester = require('./src/slash-commands/pester');
 
 // Home page
 app.event('app_home_opened', homePage);
 
-//
+// Commands
+app.command('/pester', pester);
 
-app.command('/pester', async ({ command, ack, say }) => {
-  // Acknowledge command request
-  await ack();
-  await say(`No you, <@${command.user_name}>!`);
-});
-
+// Error logging
 app.error((error) => {
-  // Check the details of the error to handle cases where you should retry sending a message or stop the app
   console.error(error);
 });
 
