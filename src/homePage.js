@@ -15,33 +15,25 @@ const homePage = async ({ event, client, context }) => {
         /* body of the view */
         blocks: [
           {
-            type: 'section',
+            type: 'header',
             text: {
-              type: 'mrkdwn',
-              text: "*Welcome Assignment Buster's Home * :tada:",
+              type: 'plain_text',
+              text: 'Enter you API key and Class ID below',
+              emoji: true,
             },
           },
           {
-            type: 'divider',
-          },
-          {
-            type: 'section',
-            text: {
-              type: 'mrkdwn',
-              text: 'Assignment Buster allows you to connect your Canvas account with Slack. This allows for a easy and convenient integration that displays your assignments that are due for the day.',
+            dispatch_action: true,
+            type: 'input',
+            element: {
+              type: 'plain_text_input',
+              action_id: 'plain_text_input-action',
             },
-          },
-          {
-            type: 'actions',
-            elements: [
-              {
-                type: 'button',
-                text: {
-                  type: 'plain_text',
-                  text: 'Connect Canvas Account',
-                },
-              },
-            ],
+            label: {
+              type: 'plain_text',
+              text: 'Label',
+              emoji: true,
+            },
           },
         ],
       },

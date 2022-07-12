@@ -1,10 +1,12 @@
-# slack-bot-bones
+# assignment-buster-bot
 
-## Author
+## Team
 
+- Ben Choe
+- Cody Davis
 - Dylan Ullrich
+- Katharine Swilley
 
-## Slack Docs
+## Project Description
 
-- [Slack API](https://api.slack.com/)
-- [@Slack/Bolt.js](https://slack.dev/bolt-js/concepts)
+Assignment Buster is a Slack App that will help students stay up-to-date with their coursework. Students are able to quickly access their assignments due that day via the app.

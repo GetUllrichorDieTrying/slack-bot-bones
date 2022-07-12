@@ -1,7 +1,7 @@
 {
   "name": "slack-bot-bones",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Author",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/GetUllrichorDieTrying/slack-bot-bones#readme",
   "dependencies": {
     "@slack/bolt": "^3.11.3",
+    "axios": "^0.27.2",
     "dotenv": "^16.0.1"
   }
 }
